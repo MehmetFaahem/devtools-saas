@@ -2,9 +2,9 @@
 
 A developer-centric dashboard that helps product teams manage SaaS onboarding, track performance metrics, and log application errors efficiently.
 
-## 🚀 Features
+## Features
 
-### ✅ Core Features Implemented
+### Core Features Implemented
 
 - **SaaS Onboarding Flow**: Tenant-aware setup for new dev teams or projects
 - **Performance Metrics View**: Track API response times, request volumes with charts
@@ -13,7 +13,7 @@ A developer-centric dashboard that helps product teams manage SaaS onboarding, t
 - **OpenAI Integration**: Auto-generate summarized bug reports
 - **Dual Database**: PostgreSQL for structured data, MongoDB for flexible logs
 
-### 🛠 Tech Stack
+### Tech Stack
 
 - **Frontend & Server**: Next.js 13 with App Router
 - **API Layer**: tRPC with React Query
@@ -22,7 +22,7 @@ A developer-centric dashboard that helps product teams manage SaaS onboarding, t
 - **AI**: OpenAI GPT-3.5 Turbo
 - **UI**: Radix UI + Tailwind CSS + Recharts
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18+
 - PostgreSQL database
@@ -30,12 +30,12 @@ A developer-centric dashboard that helps product teams manage SaaS onboarding, t
 - OpenAI API key
 - GitHub Personal Access Token (for integrations)
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/MehmetFaahem/devtools-saas.git
    cd devtools-saas
    ```
 
@@ -94,7 +94,7 @@ A developer-centric dashboard that helps product teams manage SaaS onboarding, t
 
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🏗 Project Structure
+## Project Structure
 
 ```
 ├── app/                          # Next.js App Router
@@ -127,7 +127,7 @@ A developer-centric dashboard that helps product teams manage SaaS onboarding, t
 └── drizzle.config.ts             # Drizzle ORM configuration
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### tRPC Routes
 
@@ -163,7 +163,7 @@ A developer-centric dashboard that helps product teams manage SaaS onboarding, t
   - Stores events in MongoDB
   - Triggers AI processing
 
-## 📱 SDK Usage
+## SDK Usage
 
 ### JavaScript SDK
 
@@ -193,7 +193,7 @@ devtools.logPerformance({
 });
 ```
 
-## 🔄 Database Schema
+## Database Schema
 
 ### PostgreSQL (Structured Data)
 
@@ -211,7 +211,7 @@ devtools.logPerformance({
 - `api_requests` - API request logs
 - `github_events` - GitHub webhook events
 
-## 🤖 AI Features
+## AI Features
 
 ### OpenAI Integration
 
@@ -220,13 +220,13 @@ devtools.logPerformance({
 - **Resolution Suggestions**: Provides fix recommendations
 - **GitHub Event Processing**: Auto-summarizes commits and issues
 
-## 🔐 Authentication
+## Authentication
 
 Currently uses API key authentication for SDK integration. Web interface authentication can be added with NextAuth.js.
 
-## 🚀 Deployment
+## Deployment
 
-### 🐳 Docker Deployment (Recommended)
+### Docker Deployment (Recommended)
 
 The easiest way to deploy DevTools SaaS Dashboard is using Docker with all services containerized.
 
@@ -240,7 +240,7 @@ The easiest way to deploy DevTools SaaS Dashboard is using Docker with all servi
 2. **Clone and Deploy**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/MehmetFaahem/devtools-saas.git
    cd devtools-saas
 
    # For Linux/macOS
@@ -295,7 +295,7 @@ docker-compose exec postgres psql -U devtools -d devtools_saas
 docker-compose exec mongodb mongosh devtools_saas_logs
 ```
 
-### 🌐 Traditional Deployment
+### Traditional Deployment
 
 #### Environment Setup
 
@@ -311,7 +311,7 @@ npm run db:generate
 npm run db:migrate
 ```
 
-### 📦 Production Environment Variables
+### Production Environment Variables
 
 ```env
 # Required for Docker deployment
@@ -330,7 +330,7 @@ WEBHOOK_URL=http://localhost:3000/api/webhooks/github
 NEXTAUTH_URL=http://localhost:3000
 ```
 
-## 🧪 Development
+## Development
 
 ### Available Scripts
 
@@ -348,11 +348,7 @@ NEXTAUTH_URL=http://localhost:3000
 3. Create UI components in `components/`
 4. Add pages in `app/dashboard/`
 
-## 📝 License
-
-MIT License - see LICENSE file for details.
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -360,7 +356,7 @@ MIT License - see LICENSE file for details.
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📞 Support
+## Support
 
 For issues and questions:
 
